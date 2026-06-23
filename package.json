@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "export:pdf": "marp --pdf presentations/2026/acm-midwest-chapters/slides.md -o presentations/2026/acm-midwest-chapters/dist/slides.pdf",
+    "export:pptx": "marp --pptx presentations/2026/acm-midwest-chapters/slides.md -o presentations/2026/acm-midwest-chapters/dist/slides.pptx",
+    "export:html": "marp presentations/2026/acm-midwest-chapters/slides.md -o presentations/2026/acm-midwest-chapters/dist/index.html"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.2.0"
+  }
+}
