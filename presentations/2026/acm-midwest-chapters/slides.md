@@ -8,19 +8,53 @@ description: ACM Midwest Chapters Meeting presentation
 ---
 
 <!-- _class: title -->
+![bg right:45%](images/russ-atrium.jpg)
 
 # Wright State University ACM Student Chapter
 
-Dayton, Ohio  
+<span class="tagline">Structured, hands-on computing experiences at Wright State</span>
+
+<span class="meta">
+Dayton, Ohio<br>
 ACM Midwest Chapters Meeting
-
-**Contact:** <acm@wright.edu>
-
-**Leaders:** Adrien Abbey, President · Shepard Garrett, Treasurer · Kayleigh Duncan, Faculty Advisor
+</span>
 
 <!--
 Speaker notes:
-Open by introducing the chapter, location, and leadership. Do not mention a founding year unless it is confirmed before the meeting. Frame the presentation as candid and project-focused: Wright State ACM is small as a standing organization, but it creates practical technical experiences for a much larger group of students.
+Open with energy. This slide should feel less like an administrative title page and more like an invitation into the chapter's work. The staircase image is intentional: it connects the chapter identity to a visible student project in the main engineering building. Keep the opening concise, then move the chapter details to the next slide.
+-->
+
+---
+
+<!-- _class: identity -->
+
+## Who We Are
+
+<dl class="identity-list">
+  <dt>Chapter</dt>
+  <dd>Wright State University ACM Student Chapter</dd>
+
+  <dt>Location</dt>
+  <dd>Dayton, Ohio</dd>
+
+  <dt>Contact</dt>
+  <dd><a href="mailto:acm@wright.edu">acm@wright.edu</a></dd>
+
+  <dt>President</dt>
+  <dd>Adrien Abbey</dd>
+
+  <dt>Treasurer</dt>
+  <dd>Shepard Garrett</dd>
+
+  <dt>Faculty Advisor</dt>
+  <dd>Kayleigh Duncan</dd>
+</dl>
+
+**A small chapter using ACM as a platform for practical, student-centered technical experiences.**
+
+<!--
+Speaker notes:
+This slide covers the required administrative information without crowding the title slide. If the founding year is not confirmed before the meeting, omit it. Briefly explain that the chapter is small by officer count, but it reaches a broader student audience through workshops, contests, and long-running projects.
 -->
 
 ---
@@ -29,39 +63,17 @@ Open by introducing the chapter, location, and leadership. Do not mention a foun
 
 **We use ACM as a platform for hands-on computing experiences.**
 
-Instead of relying on ordinary meetings, we focus on structured events where students leave with:
-
-- a working system
-- a new technical skill
-- a project they can continue
-- or a pathway into deeper involvement
-
-<!--
-Speaker notes:
-Be candid but professional. Ordinary recurring meetings have not been the best engagement model for our campus. Students are busy, many hesitate to commit to open-ended activities, and attendance can be inconsistent. Our response has been to build events around clear outcomes. The goal is not just attendance; it is giving students something concrete to do, build, or continue afterward.
--->
-
----
-
-## Engagement Through Structure
-
 Our strongest events have three things in common:
 
 1. **A clear technical goal**
 2. **Guided support from experienced students or staff**
 3. **A visible outcome students can take pride in**
 
-Examples:
-
-- annual programming contest
-- homelab workshop series
-- Linux Install Nights
-- Piano Staircase
-- line-following robotics workshop
+Examples include the annual programming contest, homelab workshop series, Linux Install Nights, Piano Staircase, and line-following robotics workshop.
 
 <!--
 Speaker notes:
-This slide explains the pattern behind the chapter. We are not presenting a random list of events. The consistent lesson is that structure matters. Students are more likely to engage when the event gives them a goal, a path, and help along the way. This is especially important for students who are interested but not yet confident enough to start independently.
+This slide combines the earlier “Our Chapter Model” and “Engagement Through Structure” slides. The main point is that the chapter is not built around ordinary meetings alone. Students respond better when an event has structure, mentorship, and a tangible result. This framing sets up the rest of the presentation as a coherent model rather than a simple list of activities.
 -->
 
 ---
@@ -197,23 +209,31 @@ Use this slide to connect past, present, and future. The NCL point should be sof
 
 ---
 
-<!-- _class: section-break -->
+<!-- _class: closing -->
+![bg opacity:.15](images/russ-atrium.jpg)
 
-# Let’s Compare Notes
+# Collaboration & Contact
 
-We are interested in learning from other chapters and sharing what has worked for us.
+<div class="closing-card">
 
-**Topics we would enjoy discussing:**
+We are interested in sharing what has worked for us and learning how other chapters build durable student engagement.
+
+**We would enjoy discussing:**
 
 - practical workshop design
-- student engagement
+- student engagement strategies
 - programming contests
 - long-running technical projects
 - leadership continuity
 
-**Contact:** <acm@wright.edu>
+<div class="contact-strip">
+<strong>Contact:</strong> <a href="mailto:acm@wright.edu">acm@wright.edu</a><br>
+<strong>Chapter:</strong> Wright State University ACM Student Chapter
+</div>
+
+</div>
 
 <!--
 Speaker notes:
-Close with an invitation, not a sales pitch. The tone should be mutual: we are not claiming to have solved student engagement, but we have learned that structured, hands-on technical events work better for our environment than ordinary meetings alone. Invite other chapters to reach out if they want to compare approaches.
+Close with a balanced invitation. The tone should not be needy or self-promotional. The message is that we are building a practical model and would like to compare approaches with other chapters. Emphasize mutual exchange: we can share materials and lessons learned, and we also want to learn from chapters with different strengths.
 -->

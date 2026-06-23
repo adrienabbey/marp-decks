@@ -6,10 +6,12 @@
   --wsu-green: #046033;
   --wsu-gold: #cea052;
   --wsu-dark-green: #0f3e1f;
+  --wsu-bright-green: #0f9a4b;
   --wsu-black: #2e2d29;
   --wsu-white: #ffffff;
-  --wsu-off-white: #f7f7f3;
-  --wsu-light-gold: #efe6d1;
+  --wsu-off-white: #f7f7f7;
+  --wsu-faded-gold: #e7e3c6;
+  --wsu-deep-gold: #936a25;
 
   font-family: Arial, Helvetica, sans-serif;
   color: var(--wsu-black);
@@ -20,9 +22,9 @@
 section {
   background: var(--wsu-off-white);
   color: var(--wsu-black);
-  font-size: 29px;
+  font-size: 28px;
   line-height: 1.25;
-  padding: 56px 72px 48px;
+  padding: 54px 72px 46px;
 }
 
 section::after {
@@ -52,8 +54,8 @@ h2 {
 
 h3 {
   color: var(--wsu-dark-green);
-  font-size: 32px;
-  margin: 24px 0 10px;
+  font-size: 31px;
+  margin: 22px 0 8px;
 }
 
 p {
@@ -81,7 +83,9 @@ a {
 /* Tables */
 
 table {
+  width: 100%;
   font-size: 24px;
+  border-collapse: collapse;
 }
 
 th {
@@ -91,7 +95,9 @@ th {
 
 td,
 th {
-  padding: 8px 12px;
+  padding: 10px 14px;
+  border: 1px solid #d9d9d9;
+  vertical-align: top;
 }
 
 /* Code */
@@ -105,29 +111,32 @@ pre {
   font-size: 22px;
 }
 
-/* Simple reusable slide classes */
+/* Title slide */
 
 section.title {
-  background: linear-gradient(
-    115deg,
-    var(--wsu-green) 0%,
-    var(--wsu-dark-green) 62%,
-    var(--wsu-black) 100%
-  );
+  background:
+    radial-gradient(
+      circle at 16% 18%,
+      rgba(15, 154, 75, 0.35) 0%,
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      var(--wsu-dark-green) 0%,
+      var(--wsu-green) 58%,
+      #063d24 100%
+    );
   color: var(--wsu-white);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 64px 48px 52px 68px;
 }
 
 section.title h1 {
   color: var(--wsu-white);
-  font-size: 60px;
-  max-width: 950px;
+  font-size: 49px;
+  line-height: 1.08;
+  margin-bottom: 22px;
 }
 
-section.title h2,
-section.title h3,
 section.title p,
 section.title strong,
 section.title a {
@@ -135,8 +144,121 @@ section.title a {
 }
 
 section.title::after {
-  color: var(--wsu-light-gold);
+  color: var(--wsu-faded-gold);
 }
+
+section.title .tagline {
+  display: block;
+  color: var(--wsu-faded-gold);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 18px 0 28px;
+}
+
+section.title .meta {
+  display: block;
+  border-left: 8px solid var(--wsu-gold);
+  padding-left: 18px;
+  font-size: 23px;
+  line-height: 1.35;
+}
+
+/* Detail / identity slide */
+
+section.identity {
+  background: var(--wsu-off-white);
+}
+
+section.identity h2 {
+  margin-bottom: 30px;
+}
+
+section.identity .identity-list {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  margin: 10px 0 30px;
+  padding: 8px 0;
+  border-left: 10px solid var(--wsu-gold);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 2px 10px rgba(46, 45, 41, 0.06);
+}
+
+section.identity .identity-list dt,
+section.identity .identity-list dd {
+  margin: 0;
+  padding: 9px 18px;
+  border-bottom: 1px solid rgba(46, 45, 41, 0.1);
+}
+
+section.identity .identity-list dt {
+  color: var(--wsu-dark-green);
+  font-weight: 700;
+  font-style: normal;
+}
+
+section.identity .identity-list dd {
+  color: var(--wsu-black);
+}
+
+section.identity .identity-list dt:last-of-type,
+section.identity .identity-list dd:last-of-type {
+  border-bottom: none;
+}
+
+section.identity p,
+section.identity > strong {
+  color: var(--wsu-dark-green);
+}
+
+/* Strong closing slide */
+
+section.closing {
+  background: linear-gradient(
+    90deg,
+    rgba(247, 247, 247, 0.97) 0%,
+    rgba(247, 247, 247, 0.97) 68%,
+    rgba(231, 227, 198, 0.92) 100%
+  );
+  color: var(--wsu-black);
+}
+
+section.closing h1,
+section.closing h2,
+section.closing h3 {
+  color: var(--wsu-green);
+  border-bottom: none;
+}
+
+section.closing p,
+section.closing li,
+section.closing strong,
+section.closing a {
+  color: var(--wsu-black);
+}
+
+section.closing::after {
+  color: var(--wsu-green);
+}
+
+section.closing ul {
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+
+section.closing li::marker {
+  color: var(--wsu-gold);
+}
+
+section.closing .contact-block {
+  display: block;
+  margin-top: 22px;
+  padding: 14px 18px;
+  border-left: 8px solid var(--wsu-gold);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+/* Section break / emphasis slides */
 
 section.section-break {
   background: var(--wsu-green);
@@ -157,23 +279,14 @@ section.section-break a {
 }
 
 section.section-break::after {
-  color: var(--wsu-light-gold);
+  color: var(--wsu-faded-gold);
 }
-
-/* Lead slide: good for major section intros */
 
 section.lead {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-section.lead h1,
-section.lead h2 {
-  text-align: left;
-}
-
-/* Invert: useful for emphasis slides */
 
 section.invert {
   background: var(--wsu-black);
@@ -189,8 +302,7 @@ section.invert a {
   color: var(--wsu-white);
 }
 
-/* Utility classes usable in Markdown with inline HTML if needed.
-   Keep these optional; the deck should still work without them. */
+/* Small utility classes */
 
 .small {
   font-size: 22px;
@@ -210,4 +322,11 @@ section.invert a {
 
 .green {
   color: var(--wsu-green);
+}
+
+.callout {
+  border-left: 8px solid var(--wsu-gold);
+  background: #ffffff;
+  padding: 14px 20px;
+  margin: 18px 0;
 }
