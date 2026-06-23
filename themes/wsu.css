@@ -1,0 +1,213 @@
+/* @theme wsu */
+
+@import "default";
+
+:root {
+  --wsu-green: #046033;
+  --wsu-gold: #cea052;
+  --wsu-dark-green: #0f3e1f;
+  --wsu-black: #2e2d29;
+  --wsu-white: #ffffff;
+  --wsu-off-white: #f7f7f3;
+  --wsu-light-gold: #efe6d1;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--wsu-black);
+}
+
+/* Base slide layout */
+
+section {
+  background: var(--wsu-off-white);
+  color: var(--wsu-black);
+  font-size: 29px;
+  line-height: 1.25;
+  padding: 56px 72px 48px;
+}
+
+section::after {
+  color: var(--wsu-green);
+  font-size: 18px;
+  right: 28px;
+  bottom: 18px;
+}
+
+/* Typography */
+
+h1 {
+  color: var(--wsu-green);
+  font-size: 52px;
+  line-height: 1.05;
+  margin: 0 0 22px;
+}
+
+h2 {
+  color: var(--wsu-green);
+  font-size: 42px;
+  line-height: 1.1;
+  margin: 0 0 24px;
+  padding-bottom: 10px;
+  border-bottom: 6px solid var(--wsu-gold);
+}
+
+h3 {
+  color: var(--wsu-dark-green);
+  font-size: 32px;
+  margin: 24px 0 10px;
+}
+
+p {
+  margin: 0 0 18px;
+}
+
+ul,
+ol {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+li {
+  margin: 8px 0;
+}
+
+strong {
+  color: var(--wsu-dark-green);
+}
+
+a {
+  color: var(--wsu-green);
+}
+
+/* Tables */
+
+table {
+  font-size: 24px;
+}
+
+th {
+  background: var(--wsu-green);
+  color: var(--wsu-white);
+}
+
+td,
+th {
+  padding: 8px 12px;
+}
+
+/* Code */
+
+code {
+  font-family:
+    "Cascadia Code", "Fira Code", "JetBrains Mono", Consolas, monospace;
+}
+
+pre {
+  font-size: 22px;
+}
+
+/* Simple reusable slide classes */
+
+section.title {
+  background: linear-gradient(
+    115deg,
+    var(--wsu-green) 0%,
+    var(--wsu-dark-green) 62%,
+    var(--wsu-black) 100%
+  );
+  color: var(--wsu-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.title h1 {
+  color: var(--wsu-white);
+  font-size: 60px;
+  max-width: 950px;
+}
+
+section.title h2,
+section.title h3,
+section.title p,
+section.title strong,
+section.title a {
+  color: var(--wsu-white);
+}
+
+section.title::after {
+  color: var(--wsu-light-gold);
+}
+
+section.section-break {
+  background: var(--wsu-green);
+  color: var(--wsu-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.section-break h1,
+section.section-break h2,
+section.section-break h3,
+section.section-break p,
+section.section-break strong,
+section.section-break a {
+  color: var(--wsu-white);
+  border-bottom: none;
+}
+
+section.section-break::after {
+  color: var(--wsu-light-gold);
+}
+
+/* Lead slide: good for major section intros */
+
+section.lead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.lead h1,
+section.lead h2 {
+  text-align: left;
+}
+
+/* Invert: useful for emphasis slides */
+
+section.invert {
+  background: var(--wsu-black);
+  color: var(--wsu-white);
+}
+
+section.invert h1,
+section.invert h2,
+section.invert h3,
+section.invert p,
+section.invert strong,
+section.invert a {
+  color: var(--wsu-white);
+}
+
+/* Utility classes usable in Markdown with inline HTML if needed.
+   Keep these optional; the deck should still work without them. */
+
+.small {
+  font-size: 22px;
+}
+
+.tiny {
+  font-size: 18px;
+}
+
+.muted {
+  color: #666666;
+}
+
+.gold {
+  color: var(--wsu-gold);
+}
+
+.green {
+  color: var(--wsu-green);
+}
